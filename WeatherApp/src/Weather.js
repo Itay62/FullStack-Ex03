@@ -24,7 +24,7 @@ class Weather extends React.Component {
     }
 
     fetchWeatherData(city) {
-        const apiKey = '3d15c809bd067055b5e0b805de383be3';
+        const apiKey = 'api key';
         const url = 'https://api.openweathermap.org/data/2.5/weather';
         axios.get(url, {
             params: {'q': city,
