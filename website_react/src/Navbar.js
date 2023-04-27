@@ -1,16 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // Navigation bar component
 function Navbar() {
   return (
     <nav className="nav">
-      <a href="#" className="not-last">
+      <NavLink to="/" className="not-last">
         Home
-      </a>
-      <a href="#" className="not-last">
+      </NavLink>
+      <NavLink to="/aboutMe" className="not-last">
         About Me
-      </a>
-      <a href="#">Contact Me</a>
+      </NavLink>
+      <NavLink to="/newPost" className="not-last">
+        New Post
+      </NavLink>
+      <NavLink to="/postsPage">Posts</NavLink>
       <a href="#" className="login-link">
         Login
       </a>
