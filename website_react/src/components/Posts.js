@@ -1,7 +1,7 @@
 import React from "react";
 
-// Post component
-function Post(props) {
+// Posts component
+function Posts(props) {
   return (
     <div className="post">
       <ul className="post-list">
@@ -20,4 +20,4 @@ function Post(props) {
   );
 }
 
-export default Post;
+export default Posts;

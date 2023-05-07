@@ -42,7 +42,7 @@ nav a.not-last::after {
     font-weight: bold;
 }
 
-.post li {
+.post li , .single-post{
     position: relative;
     padding-left: 5px;
     border: 2px solid #000;

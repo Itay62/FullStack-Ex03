@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./Website.css";
-import Website from "./Website";
 import reportWebVitals from "./reportWebVitals";
-import AboutMe from "./AboutMe";
-import PostsPage from "./PostsPage";
-import NewPost from "./NewPost";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import theme from "./theme";
 
 window.posts = [
   {
@@ -36,29 +35,16 @@ window.posts = [
   },
 ];
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Website />,
-  },
-  {
-    path: "/aboutMe",
-    element: <AboutMe />,
-  },
-  {
-    path: "/postsPage",
-    element: <PostsPage />,
-  },
-  {
-    path: "/newPost",
-    element: <NewPost />,
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <App />
+        </CssBaseline>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

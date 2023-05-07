@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // Sidebar component
 function Sidebar(props) {
@@ -8,7 +9,8 @@ function Sidebar(props) {
       <ul className="category-list">
         {props.categories.map((category) => (
           <li key={`${category.id}-${props.title}`}>
-            <p> {category.name}</p> <a href={category.link}>go to page</a>
+            <p> {category.name}</p>{" "}
+            <NavLink to={`/post/${category.id}`}>go to page</NavLink>
           </li>
         ))}
       </ul>

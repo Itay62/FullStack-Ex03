@@ -1,9 +1,7 @@
 import React from "react";
-import "./Website.css";
-import Separator from "./Seperator";
-import Sidebar from "./Sidebar";
-import Post from "./Post";
-import Navbar from "./Navbar";
+import Separator from "../components/Seperator";
+import Sidebar from "../components/Sidebar";
+import Posts from "../components/Posts";
 
 const latest = [
   { id: 1, name: "Blog post #1", link: "#post1" },
@@ -17,14 +15,13 @@ const popular = [
 ];
 
 // Main app component
-function App() {
+function Home() {
   return (
-    <div className="container">
-      <Navbar />
+    <div>
       <div className="wrapper">
         <div className="main-content">
           <h1 className="title">This is my blog</h1>
-          <Post posts={window.posts} />
+          <Posts posts={window.posts} />
         </div>
         <div className="side">
           <Sidebar title="Latest" categories={latest} />
@@ -35,4 +32,5 @@ function App() {
     </div>
   );
 }
-export default App;
+
+export default Home;

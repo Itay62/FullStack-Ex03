@@ -11,11 +11,8 @@ function Navbar() {
       <NavLink to="/aboutMe" className="not-last">
         About Me
       </NavLink>
-      <NavLink to="/newPost" className="not-last">
-        New Post
-      </NavLink>
-      <NavLink to="/postsPage">Posts</NavLink>
-      <a href="#" className="login-link">
+      <NavLink to="/newPost">New Post</NavLink>
+      <a href="/login" className="login-link">
         Login
       </a>
     </nav>

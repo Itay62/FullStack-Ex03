@@ -1,10 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 function AboutMe() {
   return (
-    <div className="container">
-      <Navbar />
+    <div>
       <h1>About Me</h1>
       <p>
         Hey, I'm Itay Jacobson. I am a computer science student at Reicham

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 function NewPost() {
   const [title, setTitle] = useState("");
@@ -25,8 +25,7 @@ function NewPost() {
   };
 
   return (
-    <div className="container">
-      <Navbar />
+    <div>
       <h1>New post</h1>
       <form onSubmit={handleSubmit} className="form">
         <div>
