@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Navbar from "../components/Navbar";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   //   const [userName, setUserName] = useState("");
@@ -12,7 +13,6 @@ function Login() {
 
   return (
     <div>
-      <Navbar />
       <Stack
         direction="column"
         justifyContent="center"
@@ -21,16 +21,18 @@ function Login() {
       >
         <Typography variant="h1"></Typography>
         <TextField
-          label="Outlined"
+          label=""
           variant="outlined"
           placeholder="User name"
         ></TextField>
         <TextField
-          label="Outlined"
+          label=""
           variant="outlined"
+          defaultValue=""
           placeholder="Password"
         ></TextField>
         <Button variant="outlined">Login</Button>
+        <NavLink to=".">Forgot Password / Username</NavLink>
       </Stack>
     </div>
   );
