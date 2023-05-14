@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // Posts component
 function Posts(props) {
@@ -11,7 +12,10 @@ function Posts(props) {
             <img className="post-image" src={post.img} />
             <p>{post.content}</p>
             <footer className="post-meta">
-              Published {post.days_past} days ago by {post.author}
+              Published {post.days_past} days ago by {post.author} <br></br>
+              <NavLink to={`/post/${post.id}`} className="post-link">
+                click here to find out more
+              </NavLink>
             </footer>
           </li>
         ))}
