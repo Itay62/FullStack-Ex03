@@ -9,7 +9,7 @@ function Posts(props) {
         {props.posts.map((post) => (
           <li key={post.id}>
             <h4 className="post-title">{post.title}</h4>
-            <img className="post-image" src={post.img} />
+            <img className="post-image" src={post.img} alt="post" />
             <p>{post.content}</p>
             <footer className="post-meta">
               Published {post.days_past} days ago by {post.author} <br></br>

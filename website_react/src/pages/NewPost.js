@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "../components/Navbar";
 
 function NewPost() {
   const [title, setTitle] = useState("");

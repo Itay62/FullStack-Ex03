@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import NewPost from "./pages/NewPost";
-import Post from "./components/Post";
+import FullPost from "./components/FullPost";
 import Login from "./pages/Login";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="aboutMe" element={<AboutMe />} />
           <Route path="newPost" element={<NewPost />} />
-          <Route path="post/:id" element={<Post />} />
+          <Route path="post/:id" element={<FullPost />} />
           <Route path="login" element={<Login />} />
         </Route>
       </Routes>

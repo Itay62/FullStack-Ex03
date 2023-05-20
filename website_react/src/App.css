@@ -42,11 +42,10 @@ nav a.not-last::after {
     font-weight: bold;
 }
 
-.post li , .single-post{
+.post li {
     position: relative;
     padding-left: 5px;
     border: 2px solid #000;
-    /* background-color: white; */
     width: 1200px;
     margin-bottom: 30px;
 }
@@ -76,6 +75,37 @@ nav a.not-last::after {
     color: #000;
 }
 
+/* Full post display */
+.full-post-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.full-post-page .post-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.full-post-page .post-image {
+    width: 10%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    margin-right: 50px;
+}
+
+.full-post-page .post-content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.full-post-page .post-meta {
+    font-size: 14px;
+    color: #999;
+}
 
 /* Sidebar */
 .sidebar {

@@ -1,10 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import Navbar from "../components/Navbar";
 import { NavLink } from "react-router-dom";
 
 function Login() {
@@ -29,6 +27,7 @@ function Login() {
           label=""
           variant="outlined"
           defaultValue=""
+          type="password"
           placeholder="Password"
         ></TextField>
         <Button variant="outlined">Login</Button>
